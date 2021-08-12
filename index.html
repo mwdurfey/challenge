@@ -4,8 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6141383445.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-8">
+          <h1>Weather: <span class="searchedCity">San Francisco</span></h1>
+        </div>
+      </div>
+
+      <div class="top-row">
+      <div class="row">
+        <div class="col-6 row">
+          <div class="col-5">
+            <h2>Current</h2>
+            <span class="dateTime"
+              >July 17,2021 <br />
+              Time: 12:39PM</span
+            >
+          </div>
+          <div class="col-5">
+            <h2><span class="temp-display">?</span>°C <span class= "measure"><a href="#" class="temp-change-fahr">F°</a>|<a href="#" class="temp-change-cel">C°</a></span></h2>
+            <span class="description"
+              >Sunny</span><br />
+              Humidity: <span class = "humidity">0%</span><br />
+              Wind: <span class = "windSpeed"> SW 8MPH</span>
+          </div>
+          <div class="col-2">
+           <h1 class="icon">🌞</h1>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <span class="spf">Don't forget your SPF! <br/>☀🧴</span>
+        </div>
+
+        <div class="col-4">
+          <div class="change">
+        <h5>Change City</h5>
+
+<form class="city">
+            <input type="text" placeholder="Enter a city" autocomplete="off" class="search-input" />
+            <input type="submit" value="Search" class="search-button" />
+          </form>
+          <button class="locationButton">Use My Location</button>
+          </div>
+          </div>
+        </div>
+        </div>
+
+      <br />
+      <div class="upcoming">
+        <div class="row">
+          <div class="col">Upcoming</div>
+          <div class="col">
+            <i class="far fa-sun"></i><br />86° <br />
+            Friday
+          </div>
+          <div class="col">
+            <i class="far fa-sun"></i><br />83° <br />Saturday
+          </div>
+          <div class="col">
+            <i class="fas fa-cloud-sun"></i><br />82° <br />
+            Sunday
+          </div>
+          <div class="col">
+            <i class="fas fa-cloud-sun"></i><br />81°<br />
+            Monday
+          </div>
+          <div class="col">
+            <i class="far fa-sun"></i><br />79° <br />Tuesday
+          </div>
+        </div>
+      </div>
+      <script src="src/script.js"></script>
+  </body>
 </html>
