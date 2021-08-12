@@ -1,4 +1,95 @@
+.measure {
+  display: none;
+}
+
+.container {
+  background-color: #c9ffff;
+  border: 3px solid #000;
+  max-width: 800px;
+}
 h1 {
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 27px;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+.measure {
+  font-size: 10pt;
+}
+.dateTime {
+  font-weight: bold;
+}
+.change {
+  text-align: right;
+}
+.dateTime {
+  font-size: small;
+}
+.details {
+  font-size: small;
+}
+.far {
+  color: orange;
+}
+
+.fas {
+  color: gray;
+}
+.spf {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: auto;
   text-align: center;
-  color: blue;
+}
+.icon {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: auto;
+  text-align: center;
+}
+.search-button {
+  margin: 0 auto;
+  padding: 7px;
+  background: #d3a5fc;
+  color: #ffffff;
+  font-size: 12px;
+  border: 1px solid #d3a5fc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.search-button:hover {
+  background: #ffffff;
+  color: #d3a5fc;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.locationButton {
+  margin: 10px auto;
+  padding: 4px;
+  background: #d3a5fc;
+  color: #ffffff;
+  font-size: 12px;
+  border: 1px solid #d3a5fc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.locationButton:hover {
+  background: #ffffff;
+  color: #d3a5fc;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.upcoming {
+  background-image: linear-gradient(to bottom right, #c9ffff, #f9d1f4);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.top-row {
+  background-image: linear-gradient(to bottom left, #c9ffff, #f9d1f4);
 }
