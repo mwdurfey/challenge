@@ -1,23 +1,11 @@
-.measure {
-  display: none;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-.container {
-  background-color: #c9ffff;
-  border: 3px solid #000;
-  max-width: 800px;
-}
-h1 {
-  font-family: "Roboto", sans-serif;
-}
 h2 {
-  font-family: "Roboto", sans-serif;
   font-size: 27px;
 }
 
-h5 {
-  font-family: "Roboto", sans-serif;
-}
 ul {
   margin: 0;
   padding: 0;
@@ -35,18 +23,24 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
-.measure {
-  font-size: 10pt;
+
+.container {
+  background-color: #c9ffff;
+  border: 3px solid #000;
+  max-width: 800px;
 }
+.measure {
+  display: none;
+  font-size: 14pt;
+}
+
 .dateTime {
   font-weight: bold;
 }
 .change {
   text-align: right;
 }
-.dateTime {
-  font-size: small;
-}
+
 .details {
   font-size: small;
 }
