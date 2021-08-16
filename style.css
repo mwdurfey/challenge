@@ -18,6 +18,23 @@ h2 {
 h5 {
   font-family: "Roboto", sans-serif;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
 .measure {
   font-size: 10pt;
 }
@@ -47,10 +64,9 @@ h5 {
   text-align: center;
 }
 .icon {
-  display: inline-block;
   margin-top: 20px;
   margin-bottom: auto;
-  text-align: center;
+  align-content: center;
 }
 .search-button {
   margin: 0 auto;
@@ -92,4 +108,18 @@ h5 {
 }
 .top-row {
   background-image: linear-gradient(to bottom left, #c9ffff, #f9d1f4);
+}
+
+.weather-temperature .units {
+  /* position: relative; */
+  font-size: 16px;
+  top: -34px;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
 }

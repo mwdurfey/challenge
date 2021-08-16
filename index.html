@@ -39,14 +39,22 @@
             >
           </div>
           <div class="col-5">
-            <h2><span class="temp-display">?</span>°C <span class= "measure"><a href="#" class="temp-change-fahr">F°</a>|<a href="#" class="temp-change-cel">C°</a></span></h2>
-            <span class="description"
-              >Sunny</span><br />
-              Humidity: <span class = "humidity">0%</span><br />
-              Wind: <span class = "windSpeed"> SW 8MPH</span>
+            <h2 class="weather-temperature"><span class="temp-display"></span>°
+              <span class= "units">
+                <a href="#" id="fahrenheit-link" class="units active">F</a>|
+                <a href="#" id="celsius-link" class="units">C</a>
+              </span>
+            </h2>
+            <ul>
+            <li><span class="description"></span></li>
+              <li>Humidity: <span class = "humidity">0%</span></li>
+              <li>Wind: <span class = "windSpeed"> MPH</span></li>
+            </ul>
           </div>
           <div class="col-2">
-           <h1 class="icon">🌞</h1>
+           <div class="weather-temperature">
+             <img src="" alt="" id="icon" />
+           </div>
           </div>
         </div>
 
