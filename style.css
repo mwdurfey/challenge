@@ -33,10 +33,13 @@ li:first-letter {
 }
 
 .container {
-  background-color: #c9ffff;
-  border: 3px solid #000;
   max-width: 800px;
 }
+.wrapper {
+  background-color: #c9ffff;
+  border: 3px solid #000;
+}
+
 .measure {
   display: none;
   font-size: 14pt;
@@ -44,9 +47,6 @@ li:first-letter {
 
 .dateTime {
   font-weight: bold;
-}
-.change {
-  text-align: right;
 }
 
 .details {
@@ -61,7 +61,7 @@ li:first-letter {
 }
 .spf {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: auto;
   text-align: center;
 }
@@ -69,6 +69,9 @@ li:first-letter {
   margin-top: 20px;
   margin-bottom: auto;
   align-content: center;
+}
+.updated {
+  padding-top: 15px;
 }
 .search-button {
   margin: 0 auto;
@@ -110,6 +113,7 @@ li:first-letter {
 }
 .top-row {
   background-image: linear-gradient(to bottom left, #c9ffff, #f9d1f4);
+  padding: 5px;
 }
 
 .weather-temperature .units {

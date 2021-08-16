@@ -27,25 +27,26 @@
 
   <body>
     <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-8">
-          <h1>Weather: <span class="searchedCity">San Francisco</span></h1>
+      <div class="wrapper">
+        <div class="row justify-content-start">
+          <div class="col-8">
+            <h1>Weather: <span class="searchedCity">San Francisco</span></h1>
+          </div>
         </div>
-      </div>
 
-      <div class="top-row">
-        <div class="row">
-          <div class="col-6 row">
-            <div class="col-5">
+        <div class="top-row">
+          <div class="row">
+            <div class="col-3 updated">
               <h2>Current</h2>
               <span id="update">Last Updated:</span>
               <span class="dateTime"></span>
             </div>
-            <div class="col-5">
+            <div class="col-2 updated">
               <h2 class="weather-temperature">
                 <span class="temp-display"></span>°
                 <span class="units">
-                  <a href="#" id="fahrenheit-link" class="units active">F</a> |
+                  <a href="#" id="fahrenheit-link" class="units active">F</a>
+                  |
                   <a href="#" id="celsius-link" class="units">C</a>
                 </span>
               </h2>
@@ -55,63 +56,62 @@
                 <li>Wind: <span class="windSpeed"> MPH</span></li>
               </ul>
             </div>
-            <div class="col-2">
-              <div class="weather-temperature">
+            <div class="col-3">
+              <div class="weather-temperature text-center">
                 <img src="" alt="" id="icon" />
+                <span class="spf">Don't forget your SPF! 🧴</span>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="change">
+                <h5>Change City</h5>
+
+                <form class="city">
+                  <input
+                    type="text"
+                    placeholder="Enter a city"
+                    autocomplete="off"
+                    class="search-input"
+                  />
+                  <input type="submit" value="Search" class="search-button" />
+                </form>
+                <button class="locationButton">Use My Location</button>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-2">
-            <span class="spf">Don't forget your SPF! <br />☀🧴</span>
-          </div>
-
-          <div class="col-4">
-            <div class="change">
-              <h5>Change City</h5>
-
-              <form class="city">
-                <input
-                  type="text"
-                  placeholder="Enter a city"
-                  autocomplete="off"
-                  class="search-input"
-                />
-                <input type="submit" value="Search" class="search-button" />
-              </form>
-              <button class="locationButton">Use My Location</button>
+        <br />
+        <div class="upcoming">
+          <div class="row">
+            <div class="col">Upcoming</div>
+            <div class="col">
+              <i class="far fa-sun"></i><br />86° <br />
+              Friday
+            </div>
+            <div class="col">
+              <i class="far fa-sun"></i><br />83° <br />Saturday
+            </div>
+            <div class="col">
+              <i class="fas fa-cloud-sun"></i><br />82° <br />
+              Sunday
+            </div>
+            <div class="col">
+              <i class="fas fa-cloud-sun"></i><br />81°<br />
+              Monday
+            </div>
+            <div class="col">
+              <i class="far fa-sun"></i><br />79° <br />Tuesday
             </div>
           </div>
         </div>
       </div>
 
-      <br />
-      <div class="upcoming">
-        <div class="row">
-          <div class="col">Upcoming</div>
-          <div class="col">
-            <i class="far fa-sun"></i><br />86° <br />
-            Friday
-          </div>
-          <div class="col">
-            <i class="far fa-sun"></i><br />83° <br />Saturday
-          </div>
-          <div class="col">
-            <i class="fas fa-cloud-sun"></i><br />82° <br />
-            Sunday
-          </div>
-          <div class="col">
-            <i class="fas fa-cloud-sun"></i><br />81°<br />
-            Monday
-          </div>
-          <div class="col">
-            <i class="far fa-sun"></i><br />79° <br />Tuesday
-          </div>
-        </div>
-      </div>
+      <a href="https://github.com/mwdurfey/weather-app">Open Source Code</a>
+      by: Melissa Durfey
     </div>
-    <a href="https://github.com/mwdurfey/weather-app">Open Source Code</a> by:
-    Melissa Durfey
+
     <script src="script.js"></script>
   </body>
 </html>
