@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,52 +34,56 @@
       </div>
 
       <div class="top-row">
-      <div class="row">
-        <div class="col-6 row">
-          <div class="col-5">
-            <h2>Current</h2>
-            Last Updated:
-            <span class="dateTime"
-              ></span
-            >
+        <div class="row">
+          <div class="col-6 row">
+            <div class="col-5">
+              <h2>Current</h2>
+              <span id="update">Last Updated:</span>
+              <span class="dateTime"></span>
+            </div>
+            <div class="col-5">
+              <h2 class="weather-temperature">
+                <span class="temp-display"></span>°
+                <span class="units">
+                  <a href="#" id="fahrenheit-link" class="units active">F</a> |
+                  <a href="#" id="celsius-link" class="units">C</a>
+                </span>
+              </h2>
+              <ul>
+                <li><span class="description"></span></li>
+                <li>Humidity: <span class="humidity">0%</span></li>
+                <li>Wind: <span class="windSpeed"> MPH</span></li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <div class="weather-temperature">
+                <img src="" alt="" id="icon" />
+              </div>
+            </div>
           </div>
-          <div class="col-5">
-            <h2 class="weather-temperature"><span class="temp-display"></span>°
-              <span class= "units">
-                <a href="#" id="fahrenheit-link" class="units active">F</a>|
-                <a href="#" id="celsius-link" class="units">C</a>
-              </span>
-            </h2>
-            <ul>
-            <li><span class="description"></span></li>
-              <li>Humidity: <span class = "humidity">0%</span></li>
-              <li>Wind: <span class = "windSpeed"> MPH</span></li>
-            </ul>
-          </div>
+
           <div class="col-2">
-           <div class="weather-temperature">
-             <img src="" alt="" id="icon" />
-           </div>
+            <span class="spf">Don't forget your SPF! <br />☀🧴</span>
+          </div>
+
+          <div class="col-4">
+            <div class="change">
+              <h5>Change City</h5>
+
+              <form class="city">
+                <input
+                  type="text"
+                  placeholder="Enter a city"
+                  autocomplete="off"
+                  class="search-input"
+                />
+                <input type="submit" value="Search" class="search-button" />
+              </form>
+              <button class="locationButton">Use My Location</button>
+            </div>
           </div>
         </div>
-
-        <div class="col-2">
-          <span class="spf">Don't forget your SPF! <br/>☀🧴</span>
-        </div>
-
-        <div class="col-4">
-          <div class="change">
-        <h5>Change City</h5>
-
-<form class="city">
-            <input type="text" placeholder="Enter a city" autocomplete="off" class="search-input" />
-            <input type="submit" value="Search" class="search-button" />
-          </form>
-          <button class="locationButton">Use My Location</button>
-          </div>
-          </div>
-        </div>
-        </div>
+      </div>
 
       <br />
       <div class="upcoming">
@@ -100,7 +109,9 @@
           </div>
         </div>
       </div>
-      <a href="https://github.com/mwdurfey/weather-app">GitHub for project</a>
-      <script src="script.js"></script>
+    </div>
+    <a href="https://github.com/mwdurfey/weather-app">Open Source Code</a> by:
+    Melissa Durfey
+    <script src="script.js"></script>
   </body>
 </html>

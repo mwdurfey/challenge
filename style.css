@@ -2,6 +2,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  margin-bottom: 20px;
+}
+
 h2 {
   font-size: 27px;
 }
@@ -22,6 +26,10 @@ li {
 }
 li:first-letter {
   text-transform: capitalize;
+}
+
+#update {
+  font-size: small;
 }
 
 .container {
@@ -111,7 +119,7 @@ li:first-letter {
 }
 
 .weather-temperature .active {
-  color: rgb(33, 33, 33);
+  color: black;
   cursor: default;
 }
 .weather-temperature .active:hover {

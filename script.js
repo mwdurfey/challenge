@@ -26,7 +26,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-dateTime.innerHTML = `${month} ${date}, ${localTime}`;
+dateTime.innerHTML = `${month} ${date} <br/> ${localTime}`;
 
 function showWeather(response) {
   let city = document.querySelector(".searchedCity");
