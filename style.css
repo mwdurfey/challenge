@@ -65,6 +65,9 @@ li:first-letter {
   margin-bottom: auto;
   text-align: center;
 }
+.darkness {
+  display: none;
+}
 .icon {
   margin-top: 20px;
   margin-bottom: auto;

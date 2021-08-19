@@ -73,13 +73,25 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
+function isDalylight(response) {
+  let sunrise = response.data.sys.sunrise * 1000;
+  let sunset = response.data.sys.sunset * 1000;
+  let nowUTC = now.getTime();
+  let spfDisplay = document.querySelector(".spf");
+  if (sunrise < nowUTC && sunset > nowUTC) {
+    spfDisplay.classList.remove("darkness");
+  }
+}
+
 function showWeather(response) {
+  isDalylight(response);
   let city = document.querySelector(".searchedCity");
   let tempDisplay = document.querySelector(".temp-display");
   let description = document.querySelector(".description");
   let humidity = document.querySelector(".humidity");
   let windSpeed = document.querySelector(".windSpeed");
   let iconElement = document.querySelector("#icon");
+  let spfElement = document.querySelector("#spf");
 
   city.innerHTML = `${response.data.name}`;
   fahrenheitTemperature = Math.round(`${response.data.main.temp}`);
@@ -93,6 +105,7 @@ function showWeather(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
+  spfElement = response.data;
 }
 
 function getWeather(location) {
