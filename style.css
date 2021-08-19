@@ -71,7 +71,7 @@ li:first-letter {
   align-content: center;
 }
 .updated {
-  padding-top: 15px;
+  padding: 15px;
 }
 .search-button {
   margin: 0 auto;
@@ -129,4 +129,26 @@ li:first-letter {
 }
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+}
+.forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.forecast-temp {
+  font-size: 13px;
+}
+.forecast-temp-min {
+  opacity: 0.5;
+}
+
+#upcoming {
+  font-weight: bold;
+  padding: 20px;
 }

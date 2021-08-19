@@ -38,17 +38,12 @@
           <div class="row">
             <div class="col-3 updated">
               <h2>Current</h2>
-              <span id="update">Last Updated:</span>
+              <span id="update">Last Updated:</span><br />
               <span class="dateTime"></span>
             </div>
             <div class="col-2 updated">
               <h2 class="weather-temperature">
-                <span class="temp-display"></span>°
-                <span class="units">
-                  <a href="#" id="fahrenheit-link" class="units active">F</a>
-                  |
-                  <a href="#" id="celsius-link" class="units">C</a>
-                </span>
+                <span class="temp-display"></span>°F
               </h2>
               <ul>
                 <li><span class="description"></span></li>
@@ -81,37 +76,12 @@
             </div>
           </div>
         </div>
-
-        <br />
-        <div class="upcoming">
-          <div class="row">
-            <div class="col">Upcoming</div>
-            <div class="col">
-              <i class="far fa-sun"></i><br />86° <br />
-              Friday
-            </div>
-            <div class="col">
-              <i class="far fa-sun"></i><br />83° <br />Saturday
-            </div>
-            <div class="col">
-              <i class="fas fa-cloud-sun"></i><br />82° <br />
-              Sunday
-            </div>
-            <div class="col">
-              <i class="fas fa-cloud-sun"></i><br />81°<br />
-              Monday
-            </div>
-            <div class="col">
-              <i class="far fa-sun"></i><br />79° <br />Tuesday
-            </div>
-          </div>
-        </div>
+        <span id="upcoming">Upcoming</span>
+        <div class="weather-forecast" id="forecast"></div>
       </div>
-
       <a href="https://github.com/mwdurfey/weather-app">Open Source Code</a>
       by: Melissa Durfey
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
