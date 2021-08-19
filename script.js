@@ -80,6 +80,8 @@ function isDalylight(response) {
   let spfDisplay = document.querySelector(".spf");
   if (sunrise < nowUTC && sunset > nowUTC) {
     spfDisplay.classList.remove("darkness");
+  } else {
+    spfDisplay.classList.add("darkness");
   }
 }
 
